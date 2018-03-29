@@ -90,6 +90,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -104,6 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,6 +141,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,17 +151,44 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Include\abhelp.h" />
+    <ClInclude Include="Include\EdkGuid.h" />
+    <ClInclude Include="Include\EdkMdb.h" />
+    <ClInclude Include="Include\EMSABTAG.H" />
+    <ClInclude Include="Include\ExchForm.h" />
+    <ClInclude Include="Include\IMessage.h" />
+    <ClInclude Include="Include\MAPI.h" />
+    <ClInclude Include="Include\MAPIAux.h" />
+    <ClInclude Include="Include\MAPICode.h" />
+    <ClInclude Include="Include\MAPIDbg.h" />
+    <ClInclude Include="Include\MAPIDefS.h" />
+    <ClInclude Include="Include\MAPIForm.h" />
+    <ClInclude Include="Include\MAPIGuid.h" />
+    <ClInclude Include="Include\MAPIHook.h" />
+    <ClInclude Include="Include\MAPINls.h" />
+    <ClInclude Include="Include\MAPIOID.h" />
+    <ClInclude Include="Include\MAPISPI.h" />
+    <ClInclude Include="Include\MAPITags.h" />
+    <ClInclude Include="Include\MAPIUtil.h" />
+    <ClInclude Include="Include\MAPIVal.h" />
+    <ClInclude Include="Include\MAPIWin.h" />
+    <ClInclude Include="Include\MAPIWz.h" />
+    <ClInclude Include="Include\MAPIX.h" />
+    <ClInclude Include="Include\mimeole.h" />
+    <ClInclude Include="Include\MSPST.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FixContab.cpp" />
+    <ClCompile Include="MapiStubLibrary.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="StubUtils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
