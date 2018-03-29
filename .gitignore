@@ -32,4 +32,8 @@
 *.app
 /.vs
 /FixContab/Debug
+/FixContab/Release
+/FixContab/x64
 /Debug
+/Release
+/x64
